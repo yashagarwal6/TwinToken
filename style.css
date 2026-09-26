@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    background-color: #0b0c10;
+    color: #e5e9f0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#game-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+#game-header {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 8px;
+}
+
+.game-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #88c0d0;
+}
+
+#quick-status {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.9rem;
+}
+
+.header-btn {
+    background: #2e3440;
+    color: #eceff4;
+    border: 1px solid #4c566a;
+    border-radius: 4px;
+    padding: 3px 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.header-btn:hover {
+    background: #434c5e;
+    border-color: #88c0d0;
+    color: #88c0d0;
+}
+
+.badge {
+    background: #434c5e;
+    color: #eceff4;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+}
+
+.badge-echo {
+    background: #5e81ac;
+}
+
+.badge-rift {
+    background: #b48ead;
+}
+
+#canvas-container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background-color: #121318;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    border: 1px solid #2e3440;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#game-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    image-rendering: pixelated;
+}
+
+#ui-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+#game-footer {
+    width: 800px;
+    padding: 6px 4px;
+}
+
+.controls-hint {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    font-size: 0.75rem;
+    color: #7b88a1;
+}
+
+kbd {
+    background-color: #2e3440;
+    color: #eceff4;
+    padding: 1px 5px;
+    border-radius: 3px;
+    border: 1px solid #434c5e;
+    font-family: inherit;
+    font-weight: 600;
+}

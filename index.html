@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPLIT SECOND</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-wrapper">
+        <header id="game-header">
+            <h1 class="game-title">SPLIT SECOND</h1>
+            <div id="quick-status">
+                <button id="music-btn" class="header-btn" title="Toggle / Cycle Music Volume [M]">🎵 Music: ON (50%)</button>
+                <span id="header-level">Level --</span>
+                <span id="header-mechanic" class="badge">--</span>
+            </div>
+        </header>
+
+        <div id="canvas-container">
+            <canvas id="game-canvas" width="800" height="600"></canvas>
+            <div id="ui-overlay"></div>
+        </div>
+
+        <footer id="game-footer">
+            <div class="controls-hint">
+                <span><kbd>A</kbd>/<kbd>D</kbd> or <kbd>←</kbd>/<kbd>→</kbd> Move</span>
+                <span><kbd>Space</kbd>/<kbd>W</kbd> Jump</span>
+                <span><kbd>Q</kbd> Echo / Rift Hold</span>
+                <span><kbd>E</kbd> Cycle / Interact</span>
+                <span><kbd>T</kbd> Trim Scrubber</span>
+                <span><kbd>M</kbd> Music (ON/OFF)</span>
+                <span><kbd>R</kbd> Instant Reset</span>
+                <span><kbd>H</kbd> Hint</span>
+                <span><kbd>P</kbd> Autopilot</span>
+                <span><kbd>Esc</kbd> Level Select</span>
+            </div>
+        </footer>
+    </div>
+
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
